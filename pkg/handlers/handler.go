@@ -24,6 +24,8 @@ func NewHandlers(r *Repository) {
 }
 
 func (m *Repository) Home(w http.ResponseWriter, r *http.Request) {
+	remoteIP := r.RemoteAddr
+	m.App.Session.Put(r.Context(), "remote_ip", remoteIP)
 	render.RenderTemplate(w, "home.page.tmpl.html", &models.TemplateData{})
 }
 
@@ -31,6 +33,8 @@ func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
 
 	StringMap := make(map[string]string)
 	StringMap["test"] = "hello again"
+	remoteIP := m.App.Session.GetString(r.Context(), "remote_ip")
+	StringMap["remote_ip"] = remoteIP
 
 	render.RenderTemplate(w, "about.page.tmpl.html", &models.TemplateData{
 		StringMap: StringMap,
