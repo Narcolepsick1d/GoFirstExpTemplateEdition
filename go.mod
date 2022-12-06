@@ -1,4 +1,4 @@
-module awesomeProject2
+module github.com/Narcolepsick1d/GoFirstExpTemplateEdition
 
 go 1.19
 

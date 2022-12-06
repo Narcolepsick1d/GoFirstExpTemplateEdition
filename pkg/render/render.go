@@ -1,10 +1,10 @@
 package render
 
 import (
-	"awesomeProject2/pkg/config"
-	"awesomeProject2/pkg/models"
 	"bytes"
 	"fmt"
+	"github.com/Narcolepsick1d/GoFirstExpTemplateEdition/pkg/config"
+	"github.com/Narcolepsick1d/GoFirstExpTemplateEdition/pkg/models"
 	"html/template"
 	"log"
 	"net/http"

@@ -1,9 +1,9 @@
 package handlers
 
 import (
-	"awesomeProject2/pkg/config"
-	"awesomeProject2/pkg/models"
-	"awesomeProject2/pkg/render"
+	"github.com/Narcolepsick1d/GoFirstExpTemplateEdition/pkg/config"
+	"github.com/Narcolepsick1d/GoFirstExpTemplateEdition/pkg/models"
+	"github.com/Narcolepsick1d/GoFirstExpTemplateEdition/pkg/render"
 	"net/http"
 )
 

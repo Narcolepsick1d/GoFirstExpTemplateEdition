@@ -1,9 +1,9 @@
 package main
 
 import (
-	"awesomeProject2/pkg/config"
-	"awesomeProject2/pkg/handlers"
-	"awesomeProject2/pkg/render"
+	"github.com/Narcolepsick1d/GoFirstExpTemplateEdition/pkg/config"
+	"github.com/Narcolepsick1d/GoFirstExpTemplateEdition/pkg/handlers"
+	"github.com/Narcolepsick1d/GoFirstExpTemplateEdition/pkg/render"
 	"github.com/alexedwards/scs/v2"
 	"log"
 	"net/http"

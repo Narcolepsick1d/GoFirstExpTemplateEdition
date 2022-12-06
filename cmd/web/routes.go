@@ -1,14 +1,13 @@
 package main
 
 import (
-	"awesomeProject2/pkg/config"
-	"awesomeProject2/pkg/handlers"
+	"github.com/Narcolepsick1d/GoFirstExpTemplateEdition/pkg/handlers"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 	"net/http"
 )
 
-func routes(app *config.AppConfig) http.Handler {
+func routes() http.Handler {
 	//mux := pat.New()
 	//
 	//mux.Get("/", http.HandlerFunc(handlers.Repo.Home))
